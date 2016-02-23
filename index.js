@@ -28,10 +28,10 @@ app.use(mountPath, api);
 
 // Parse Server plays nicely with the rest of your web routes
 app.get('/', function(req, res) {
-  res.status(200).send('I dream of being a web site.');
+  res.status(200).send('Hosted Parse Server in Azure.');
 });
 
-var port = process.env.PORT || 1337;
+var port = process.env.PORT || 80;
 app.listen(port, function() {
     console.log('parse-server-example running on port ' + port + '.');
 });
